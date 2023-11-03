@@ -45,7 +45,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vv7me"]
-radius = 65.0
+radius = 71.0
 height = 146.0
 
 [node name="Mob" type="RigidBody2D"]
@@ -54,9 +54,10 @@ gravity_scale = 2.66454e-15
 script = ExtResource("1_ejajf")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 1.5708
 scale = Vector2(0.75, 0.75)
 sprite_frames = SubResource("SpriteFrames_0qqs6")
-animation = &"fly"
+animation = &"swim"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_vv7me")

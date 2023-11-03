@@ -21,8 +21,8 @@ func _process(delta):
 	if Input.is_action_pressed("move_right"):
 		velocity.x += 1
 	
-	if velocity.length()>0:
-		velocity = velocity.normalized()*speed
+	if velocity.length() > 0:
+		velocity = velocity.normalized() * speed
 		$AnimatedSprite2D.play()
 	else:
 		$AnimatedSprite2D.stop()
